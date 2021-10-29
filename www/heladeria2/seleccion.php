@@ -69,7 +69,6 @@ if($cantidad>0){
             echo"<div class=medio>";
             if($codigo_sabor==0){
                 echo "<h3>Elige un sabor a la izquierda para empezar</h3>";
-                registrar($codigo_empleado);
             } else {
                 echo "<h3>Sabor elegido: ".sacar_sabor($codigo_sabor)."</h3>";
                 

@@ -3,24 +3,22 @@
     include "funciones.php";
 
     $codigo_empleado=$_POST['codigo_empleado'];
-    $comanda=unserialize($_POST['comanda']);
+    $confirmar=$_POST['cobrar'];
+    $comanda=unserialize($_POST['matriz']);
 
-    if(isset($cobrar)){
+    if($confirmar=="cobrar"){
         $confirmacion=$_POST['cobrar'];
         foreach($comanda as $indice=>$valor){
             $reci = $indice/1000;
             $sab = $indice%1000;
             
             $sabor=$sab;
-            echo $sabor .", ";
             $recipiente=round($reci);
-            echo $recipiente .", ";
             $cantidad = $valor;
-            echo $cantidad .", ";
             $idTicket=id_ticket();
-            echo $idTicket .", ";
             $prec = calc_precio($sab,round($reci))*$valor;
-            echo $prec;
+            echo "Pedido cobrado y guardado";
+            $conexion=new mysqli("localhost", "root", "root", "heladeria");
             $meterTicket="INSERT INTO linea_ticket (Id_ticket,Id_articulo,Id_tipo,Cantidad,Precio_vendido) VALUES (".$idTicket.",".$sabor.",".$recipiente.", ".$cantidad.", ".$prec.")";
             $accion=$conexion->query($meterTicket);
         }
@@ -30,8 +28,9 @@
         echo "<input type=submit value=VOLVER name=volver>";
         echo "</form>";
     }
-    if(isset($cancelar)){
+    if($confirmar=="cancelar"){
         $confirmacion=$_POST['cancelar'];
+        echo "Pedido cancelado";
         echo "<form name=inicio action=index.php method=POST>";
         echo "<input type=submit value=VOLVER name=volver>";
         echo "</form>";
