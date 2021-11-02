@@ -9293,3 +9293,83 @@
 [Fri Oct 29 13:07:15.109877 2021] [mpm_winnt:notice] [pid 11584:tid 628] AH00418: Parent: Created child process 1068
 [Fri Oct 29 13:07:15.641571 2021] [ssl:warn] [pid 1068:tid 600] AH01906: main-serveur:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
 [Fri Oct 29 13:07:15.641571 2021] [ssl:warn] [pid 1068:tid 600] AH01909: main-serveur:443:0 server certificate does NOT include an ID which matches the server name
+[Fri Oct 29 13:07:15.750922 2021] [ssl:warn] [pid 1068:tid 600] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Fri Oct 29 13:07:15.750922 2021] [ssl:warn] [pid 1068:tid 600] AH01906: main-serveur:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Fri Oct 29 13:07:15.750922 2021] [ssl:warn] [pid 1068:tid 600] AH01909: main-serveur:443:0 server certificate does NOT include an ID which matches the server name
+[Fri Oct 29 13:07:15.766517 2021] [mpm_winnt:notice] [pid 1068:tid 600] AH00354: Child: Starting 64 worker threads.
+[Fri Oct 29 13:08:33.348441 2021] [:error] [pid 1068:tid 1280] [client ::1:57063] PHP Notice:  Undefined index: comanda in D:\\web servidor\\UwAmp\\www\\heladeria2\\confirmacion.php on line 6, referer: http://localhost/heladeria2/seleccion.php
+[Fri Oct 29 13:08:33.348441 2021] [:error] [pid 1068:tid 1280] [client ::1:57063] PHP Stack trace:, referer: http://localhost/heladeria2/seleccion.php
+[Fri Oct 29 13:08:33.348441 2021] [:error] [pid 1068:tid 1280] [client ::1:57063] PHP   1. {main}() D:\\web servidor\\UwAmp\\www\\heladeria2\\confirmacion.php:0, referer: http://localhost/heladeria2/seleccion.php
+[Fri Oct 29 13:09:40.998322 2021] [:error] [pid 1068:tid 1280] [client ::1:61602] PHP Notice:  Undefined index: codigo_empleado in D:\\web servidor\\UwAmp\\www\\heladeria2\\seleccion.php on line 3
+[Fri Oct 29 13:09:40.998322 2021] [:error] [pid 1068:tid 1280] [client ::1:61602] PHP Stack trace:
+[Fri Oct 29 13:09:40.998322 2021] [:error] [pid 1068:tid 1280] [client ::1:61602] PHP   1. {main}() D:\\web servidor\\UwAmp\\www\\heladeria2\\seleccion.php:0
+[Fri Oct 29 13:09:40.998322 2021] [:error] [pid 1068:tid 1280] [client ::1:61602] PHP Notice:  Undefined index: comanda in D:\\web servidor\\UwAmp\\www\\heladeria2\\seleccion.php on line 4
+[Fri Oct 29 13:09:40.998322 2021] [:error] [pid 1068:tid 1280] [client ::1:61602] PHP Stack trace:
+[Fri Oct 29 13:09:40.998322 2021] [:error] [pid 1068:tid 1280] [client ::1:61602] PHP   1. {main}() D:\\web servidor\\UwAmp\\www\\heladeria2\\seleccion.php:0
+[Fri Oct 29 13:09:40.998322 2021] [:error] [pid 1068:tid 1280] [client ::1:61602] PHP Notice:  Undefined index: codigo_sabor in D:\\web servidor\\UwAmp\\www\\heladeria2\\seleccion.php on line 5
+[Fri Oct 29 13:09:40.998322 2021] [:error] [pid 1068:tid 1280] [client ::1:61602] PHP Stack trace:
+[Fri Oct 29 13:09:40.998322 2021] [:error] [pid 1068:tid 1280] [client ::1:61602] PHP   1. {main}() D:\\web servidor\\UwAmp\\www\\heladeria2\\seleccion.php:0
+[Fri Oct 29 13:09:40.998322 2021] [:error] [pid 1068:tid 1280] [client ::1:61602] PHP Notice:  Undefined index: codigo_recipiente in D:\\web servidor\\UwAmp\\www\\heladeria2\\seleccion.php on line 6
+[Fri Oct 29 13:09:40.998322 2021] [:error] [pid 1068:tid 1280] [client ::1:61602] PHP Stack trace:
+[Fri Oct 29 13:09:40.998322 2021] [:error] [pid 1068:tid 1280] [client ::1:61602] PHP   1. {main}() D:\\web servidor\\UwAmp\\www\\heladeria2\\seleccion.php:0
+[Fri Oct 29 13:09:40.998322 2021] [:error] [pid 1068:tid 1280] [client ::1:61602] PHP Notice:  Undefined index: cantidad in D:\\web servidor\\UwAmp\\www\\heladeria2\\seleccion.php on line 7
+[Fri Oct 29 13:09:40.998322 2021] [:error] [pid 1068:tid 1280] [client ::1:61602] PHP Stack trace:
+[Fri Oct 29 13:09:40.998322 2021] [:error] [pid 1068:tid 1280] [client ::1:61602] PHP   1. {main}() D:\\web servidor\\UwAmp\\www\\heladeria2\\seleccion.php:0
+[Fri Oct 29 13:09:40.998322 2021] [:error] [pid 1068:tid 1280] [client ::1:61602] PHP Notice:  Undefined index: precio in D:\\web servidor\\UwAmp\\www\\heladeria2\\seleccion.php on line 8
+[Fri Oct 29 13:09:40.998322 2021] [:error] [pid 1068:tid 1280] [client ::1:61602] PHP Stack trace:
+[Fri Oct 29 13:09:40.998322 2021] [:error] [pid 1068:tid 1280] [client ::1:61602] PHP   1. {main}() D:\\web servidor\\UwAmp\\www\\heladeria2\\seleccion.php:0
+[Fri Oct 29 13:09:41.000320 2021] [:error] [pid 1068:tid 1280] [client ::1:61602] PHP Fatal error:  Call to a member function fetch_array() on boolean in D:\\web servidor\\UwAmp\\www\\heladeria2\\funciones.php on line 8
+[Fri Oct 29 13:09:41.000320 2021] [:error] [pid 1068:tid 1280] [client ::1:61602] PHP Stack trace:
+[Fri Oct 29 13:09:41.000320 2021] [:error] [pid 1068:tid 1280] [client ::1:61602] PHP   1. {main}() D:\\web servidor\\UwAmp\\www\\heladeria2\\seleccion.php:0
+[Fri Oct 29 13:09:41.000320 2021] [:error] [pid 1068:tid 1280] [client ::1:61602] PHP   2. sacarNombre() D:\\web servidor\\UwAmp\\www\\heladeria2\\seleccion.php:42
+[Fri Oct 29 13:12:00.168326 2021] [:error] [pid 1068:tid 1280] [client ::1:51786] PHP Notice:  Undefined index: cancelar in D:\\web servidor\\UwAmp\\www\\heladeria2\\confirmacion.php on line 7, referer: http://localhost/heladeria2/seleccion.php
+[Fri Oct 29 13:12:00.168326 2021] [:error] [pid 1068:tid 1280] [client ::1:51786] PHP Stack trace:, referer: http://localhost/heladeria2/seleccion.php
+[Fri Oct 29 13:12:00.168326 2021] [:error] [pid 1068:tid 1280] [client ::1:51786] PHP   1. {main}() D:\\web servidor\\UwAmp\\www\\heladeria2\\confirmacion.php:0, referer: http://localhost/heladeria2/seleccion.php
+[Fri Oct 29 13:13:16.668182 2021] [:error] [pid 1068:tid 1280] [client ::1:64081] PHP Parse error:  syntax error, unexpected ')' in D:\\web servidor\\UwAmp\\www\\heladeria2\\confirmacion.php on line 9, referer: http://localhost/heladeria2/seleccion.php
+[Fri Oct 29 13:14:17.220147 2021] [:error] [pid 1068:tid 1260] [client ::1:63074] PHP Notice:  Undefined variable: cobrar in D:\\web servidor\\UwAmp\\www\\heladeria2\\confirmacion.php on line 9, referer: http://localhost/heladeria2/seleccion.php
+[Fri Oct 29 13:14:17.220147 2021] [:error] [pid 1068:tid 1260] [client ::1:63074] PHP Stack trace:, referer: http://localhost/heladeria2/seleccion.php
+[Fri Oct 29 13:14:17.220147 2021] [:error] [pid 1068:tid 1260] [client ::1:63074] PHP   1. {main}() D:\\web servidor\\UwAmp\\www\\heladeria2\\confirmacion.php:0, referer: http://localhost/heladeria2/seleccion.php
+[Fri Oct 29 13:14:17.220147 2021] [:error] [pid 1068:tid 1260] [client ::1:63074] PHP Notice:  Undefined variable: cobrar in D:\\web servidor\\UwAmp\\www\\heladeria2\\confirmacion.php on line 34, referer: http://localhost/heladeria2/seleccion.php
+[Fri Oct 29 13:14:17.220147 2021] [:error] [pid 1068:tid 1260] [client ::1:63074] PHP Stack trace:, referer: http://localhost/heladeria2/seleccion.php
+[Fri Oct 29 13:14:17.220147 2021] [:error] [pid 1068:tid 1260] [client ::1:63074] PHP   1. {main}() D:\\web servidor\\UwAmp\\www\\heladeria2\\confirmacion.php:0, referer: http://localhost/heladeria2/seleccion.php
+[Fri Oct 29 13:14:42.167508 2021] [:error] [pid 1068:tid 1260] [client ::1:61972] PHP Notice:  Undefined variable: conexion in D:\\web servidor\\UwAmp\\www\\heladeria2\\confirmacion.php on line 26, referer: http://localhost/heladeria2/seleccion.php
+[Fri Oct 29 13:14:42.167508 2021] [:error] [pid 1068:tid 1260] [client ::1:61972] PHP Stack trace:, referer: http://localhost/heladeria2/seleccion.php
+[Fri Oct 29 13:14:42.167508 2021] [:error] [pid 1068:tid 1260] [client ::1:61972] PHP   1. {main}() D:\\web servidor\\UwAmp\\www\\heladeria2\\confirmacion.php:0, referer: http://localhost/heladeria2/seleccion.php
+[Fri Oct 29 13:14:42.167508 2021] [:error] [pid 1068:tid 1260] [client ::1:61972] PHP Fatal error:  Call to a member function query() on null in D:\\web servidor\\UwAmp\\www\\heladeria2\\confirmacion.php on line 26, referer: http://localhost/heladeria2/seleccion.php
+[Fri Oct 29 13:14:42.167508 2021] [:error] [pid 1068:tid 1260] [client ::1:61972] PHP Stack trace:, referer: http://localhost/heladeria2/seleccion.php
+[Fri Oct 29 13:14:42.167508 2021] [:error] [pid 1068:tid 1260] [client ::1:61972] PHP   1. {main}() D:\\web servidor\\UwAmp\\www\\heladeria2\\confirmacion.php:0, referer: http://localhost/heladeria2/seleccion.php
+[Fri Oct 29 13:20:32.162706 2021] [:error] [pid 1068:tid 1260] [client ::1:64697] PHP Parse error:  syntax error, unexpected '"registra empelado"' (T_CONSTANT_ENCAPSED_STRING) in D:\\web servidor\\UwAmp\\www\\heladeria2\\funciones.php on line 282
+[Fri Oct 29 13:20:32.162706 2021] [:error] [pid 1068:tid 1260] [client ::1:64697] PHP Stack trace:
+[Fri Oct 29 13:20:32.162706 2021] [:error] [pid 1068:tid 1260] [client ::1:64697] PHP   1. {main}() D:\\web servidor\\UwAmp\\www\\heladeria2\\index.php:0
+[Fri Oct 29 13:20:33.072783 2021] [:error] [pid 1068:tid 1260] [client ::1:64697] PHP Parse error:  syntax error, unexpected '"registra empelado"' (T_CONSTANT_ENCAPSED_STRING) in D:\\web servidor\\UwAmp\\www\\heladeria2\\funciones.php on line 282
+[Fri Oct 29 13:20:33.072783 2021] [:error] [pid 1068:tid 1260] [client ::1:64697] PHP Stack trace:
+[Fri Oct 29 13:20:33.072783 2021] [:error] [pid 1068:tid 1260] [client ::1:64697] PHP   1. {main}() D:\\web servidor\\UwAmp\\www\\heladeria2\\index.php:0
+[Fri Oct 29 13:20:33.229347 2021] [:error] [pid 1068:tid 1260] [client ::1:64697] PHP Parse error:  syntax error, unexpected '"registra empelado"' (T_CONSTANT_ENCAPSED_STRING) in D:\\web servidor\\UwAmp\\www\\heladeria2\\funciones.php on line 282
+[Fri Oct 29 13:20:33.229347 2021] [:error] [pid 1068:tid 1260] [client ::1:64697] PHP Stack trace:
+[Fri Oct 29 13:20:33.229347 2021] [:error] [pid 1068:tid 1260] [client ::1:64697] PHP   1. {main}() D:\\web servidor\\UwAmp\\www\\heladeria2\\index.php:0
+[Fri Oct 29 13:20:33.407397 2021] [:error] [pid 1068:tid 1260] [client ::1:64697] PHP Parse error:  syntax error, unexpected '"registra empelado"' (T_CONSTANT_ENCAPSED_STRING) in D:\\web servidor\\UwAmp\\www\\heladeria2\\funciones.php on line 282
+[Fri Oct 29 13:20:33.407397 2021] [:error] [pid 1068:tid 1260] [client ::1:64697] PHP Stack trace:
+[Fri Oct 29 13:20:33.407397 2021] [:error] [pid 1068:tid 1260] [client ::1:64697] PHP   1. {main}() D:\\web servidor\\UwAmp\\www\\heladeria2\\index.php:0
+[Fri Oct 29 13:20:33.576050 2021] [:error] [pid 1068:tid 1260] [client ::1:64697] PHP Parse error:  syntax error, unexpected '"registra empelado"' (T_CONSTANT_ENCAPSED_STRING) in D:\\web servidor\\UwAmp\\www\\heladeria2\\funciones.php on line 282
+[Fri Oct 29 13:20:33.576050 2021] [:error] [pid 1068:tid 1260] [client ::1:64697] PHP Stack trace:
+[Fri Oct 29 13:20:33.576050 2021] [:error] [pid 1068:tid 1260] [client ::1:64697] PHP   1. {main}() D:\\web servidor\\UwAmp\\www\\heladeria2\\index.php:0
+[Fri Oct 29 13:20:33.747492 2021] [:error] [pid 1068:tid 1260] [client ::1:64697] PHP Parse error:  syntax error, unexpected '"registra empelado"' (T_CONSTANT_ENCAPSED_STRING) in D:\\web servidor\\UwAmp\\www\\heladeria2\\funciones.php on line 282
+[Fri Oct 29 13:20:33.747492 2021] [:error] [pid 1068:tid 1260] [client ::1:64697] PHP Stack trace:
+[Fri Oct 29 13:20:33.747492 2021] [:error] [pid 1068:tid 1260] [client ::1:64697] PHP   1. {main}() D:\\web servidor\\UwAmp\\www\\heladeria2\\index.php:0
+[Fri Oct 29 13:20:33.918175 2021] [:error] [pid 1068:tid 1260] [client ::1:64697] PHP Parse error:  syntax error, unexpected '"registra empelado"' (T_CONSTANT_ENCAPSED_STRING) in D:\\web servidor\\UwAmp\\www\\heladeria2\\funciones.php on line 282
+[Fri Oct 29 13:20:33.918175 2021] [:error] [pid 1068:tid 1260] [client ::1:64697] PHP Stack trace:
+[Fri Oct 29 13:20:33.918175 2021] [:error] [pid 1068:tid 1260] [client ::1:64697] PHP   1. {main}() D:\\web servidor\\UwAmp\\www\\heladeria2\\index.php:0
+[Fri Oct 29 13:34:22.716980 2021] [:error] [pid 1068:tid 1264] [client ::1:62566] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in D:\\web servidor\\UwAmp\\www\\heladeria2\\confirmacion.php on line 34, referer: http://localhost/heladeria2/seleccion.php
+[Fri Oct 29 13:55:42.910485 2021] [mpm_winnt:crit] [pid 1068:tid 600] AH02538: Child: Parent process exited abruptly. Child process is ending
+[Tue Nov 02 11:46:07.372777 2021] [ssl:warn] [pid 15076:tid 532] AH01906: main-serveur:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Tue Nov 02 11:46:07.372777 2021] [ssl:warn] [pid 15076:tid 532] AH01909: main-serveur:443:0 server certificate does NOT include an ID which matches the server name
+[Tue Nov 02 11:46:07.432402 2021] [core:warn] [pid 15076:tid 532] AH00098: pid file D:/web servidor/UwAmp/bin/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Tue Nov 02 11:46:07.525580 2021] [ssl:warn] [pid 15076:tid 532] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Tue Nov 02 11:46:07.525580 2021] [ssl:warn] [pid 15076:tid 532] AH01906: main-serveur:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Tue Nov 02 11:46:07.525580 2021] [ssl:warn] [pid 15076:tid 532] AH01909: main-serveur:443:0 server certificate does NOT include an ID which matches the server name
+[Tue Nov 02 11:46:08.656137 2021] [mpm_winnt:notice] [pid 15076:tid 532] AH00455: Apache/2.4.18 (Win32) OpenSSL/1.0.2f PHP/5.6.18 configured -- resuming normal operations
+[Tue Nov 02 11:46:08.656137 2021] [mpm_winnt:notice] [pid 15076:tid 532] AH00456: Server built: Jan 28 2016 09:58:25
+[Tue Nov 02 11:46:08.656137 2021] [core:notice] [pid 15076:tid 532] AH00094: Command line: 'D:\\web servidor\\UwAmp\\bin\\apache\\bin\\httpd.exe -d D:/web servidor/UwAmp/bin/apache -f D:\\web servidor\\UwAmp\\bin\\apache\\conf\\httpd.conf'
+[Tue Nov 02 11:46:08.656137 2021] [mpm_winnt:notice] [pid 15076:tid 532] AH00418: Parent: Created child process 10196
+[Tue Nov 02 11:46:09.157169 2021] [ssl:warn] [pid 10196:tid 604] AH01906: main-serveur:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Tue Nov 02 11:46:09.157169 2021] [ssl:warn] [pid 10196:tid 604] AH01909: main-serveur:443:0 server certificate does NOT include an ID which matches the server name
