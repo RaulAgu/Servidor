@@ -3,15 +3,32 @@ include "funciones.php";
 session_start();
     //si viene de entrada.php
     if(isset($_POST['nombre'])){
-        //vengo index.php
-        //compruebo s está bien identificado
-        $_SESSION['nombre']=$_POST['nombre'];
+        //vengo entrada.php
+        // //compruebo s está bien identificado
+        // $_SESSION['nombre']=$_POST['nombre'];
 
-        echo "Bienvenido a la web";
+        // //Actualiza cuando ha entrado
+        // $_SESSION['cuando']=time(); //nº de segundos actuales
+
+        if(entrar($_POST['nombre'],$_POST['contrasena'])==true){
+            echo "Bienvenido a la web"."<br/>";
+        } else {
+            echo "Impostor!";
+        }
     } 
 
     if(estaIdentificado()){
-        echo "Hola, ".$_SESSION['nombre']."<br/>"; //Si esta identificado, le saluda
+        if(haCaducado()){
+            echo "Te has dormido!"."<br/>";
+            echo "<a href=entrada.php>Pulsa aquí</a>";
+        } else {
+            $_SESSION['cuando']=time();
+            echo "Hola, ".$_SESSION['nombre']."<br/>"; //Si esta identificado, le saluda
+            echo "Estas en fichero1.php"."<br/>";
+            echo "<a href=fichero2.php>Ir a fichero2</a>";
+            echo "<a href=entrada.php>Pulsa para volver</a>";
+        }
+        
     } else {
         header("location:entrada.php"); //si se slata la identificación, le echa a entrada.php
     }
@@ -29,4 +46,3 @@ session_start();
 
 ?>
 
-<a href="entrada.php">Pulsa para seguir</a>
