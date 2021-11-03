@@ -1,0 +1,49 @@
+PELUQUERIA
+
+pagina segura, con inicio de sesion, usuario, contraseña, dni, tlfono
+
+que los clientes puedan pedir cita
+
+horario de peluqueros (barra de tiempo con que hacer cada uno)
+
+poder decir cuando los peloqueros no pueden estar para los q no salgan
+
+poder meter clientes cuando otros estan esperando (intermitencia)
+
+horario: de 10-1, 4-7
+
+hacer factura al acabar servicio
+
+sistema amigable
+
+------------------------------------------------------------------
+RESTAURANTE
+
+tener x mesas
+
+en cada mesa se toma comanda:
+pase: lo q se lleva a la mesa
+
+	-------bebidas
+	1agua
+	2cerveza
+	--------1º
+	1sopa
+	2lentejas
+	--------2º
+	1chuletas
+	1e.rusa
+	2pollo
+	--------3ºposte
+	1flan
+	2flan
+	--------4ºbebida
+	1cafe
+	2cortado
+	--------comanda
+puede haber 1 o varios pases
+puede quitarse o  añadir elementos de la comanda sin servir
+
+si se ve q en una mesa estan acabando, que se envie el siguiente pase a cocina
+
+facturar cuando se termine la comanda
