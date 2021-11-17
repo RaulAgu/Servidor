@@ -10,7 +10,7 @@ session_start();
         // //Actualiza cuando ha entrado
         // $_SESSION['cuando']=time(); //nº de segundos actuales
 
-        if(entrar($_POST['nombre'],$_POST['contrasena'])==true){
+        if(entrar($_POST['nombre'],$_POST['contrasena'])){
             echo "Bienvenido a la web"."<br/>";
         } else {
             echo "Impostor!";
